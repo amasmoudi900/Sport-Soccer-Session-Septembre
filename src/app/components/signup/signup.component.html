@@ -68,6 +68,7 @@
                         <input type="password" class="form-control" formControlName='confirmPwd'
                             placeholder="Confirm Password">
                     </div>
+                    <!-- Here my comment -->
                     <div *ngIf="signupForm.controls['confirmPwd'].invalid && 
                     (signupForm.controls['confirmPwd'].dirty || signupForm.controls['confirmPwd'].touched)">
                         <div *ngIf="signupForm.controls['confirmPwd'].errors.mustMatch" class="text-danger">
