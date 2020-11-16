@@ -12,6 +12,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <form [formGroup]='signupForm'>
+                    <!-- Here my comment -->
+
                     <!-- accolade {} -->
                     <!-- crochet [] -->
                     <!-- <form #signupForm='ngForm'> -->
@@ -68,11 +70,10 @@
                         <input type="password" class="form-control" formControlName='confirmPwd'
                             placeholder="Confirm Password">
                     </div>
-                    <!-- Here my comment -->
                     <div *ngIf="signupForm.controls['confirmPwd'].invalid && 
                     (signupForm.controls['confirmPwd'].dirty || signupForm.controls['confirmPwd'].touched)">
                         <div *ngIf="signupForm.controls['confirmPwd'].errors.mustMatch" class="text-danger">
-                           Confirm Pwd must match PWD
+                            Confirm Pwd must match PWD
                         </div>
                     </div>
                     <div class="form-group">
